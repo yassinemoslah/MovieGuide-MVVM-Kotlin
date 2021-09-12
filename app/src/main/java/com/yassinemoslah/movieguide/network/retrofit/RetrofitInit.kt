@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit
  * A [HttpLoggingInterceptor] to log all requests and responses
  */
 internal object RetrofitInit {
+
     private const val baseUrl = "https://yassinemoslah.com/api/"
 
     fun getApi(): MovieGuideApi = createRetrofit().create(MovieGuideApi::class.java)
@@ -41,4 +42,5 @@ internal object RetrofitInit {
             .baseUrl(baseUrl)
             .build()
     }
+
 }

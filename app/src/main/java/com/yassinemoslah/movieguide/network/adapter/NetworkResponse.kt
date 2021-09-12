@@ -7,6 +7,7 @@ import java.io.IOException
  * This class represents the possible API calls states
  */
 sealed class NetworkResponse<out T, out U> {
+
     /**
      * Success response with body
      */
@@ -31,4 +32,5 @@ sealed class NetworkResponse<out T, out U> {
      * For example, json parsing error
      */
     data class UnknownError(val error: Throwable?) : NetworkResponse<Nothing, Nothing>()
+
 }

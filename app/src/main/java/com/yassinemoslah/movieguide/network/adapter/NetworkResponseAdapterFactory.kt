@@ -42,4 +42,5 @@ class NetworkResponseAdapterFactory : CallAdapter.Factory() {
 
         return NetworkResponseAdapter<Any, Any>(successBodyType, errorBodyConverter)
     }
+
 }

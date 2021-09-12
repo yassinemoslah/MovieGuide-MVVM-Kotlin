@@ -17,4 +17,5 @@ class NetworkResponseAdapter<S : Any, E : Any>(private val successType: Type, pr
     override fun adapt(call: Call<S>): Call<NetworkResponse<S, E>> {
         return NetworkResponseCall(call, errorBodyConverter)
     }
+
 }

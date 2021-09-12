@@ -1,6 +1,7 @@
 package com.yassinemoslah.movieguide.network
 
 import com.yassinemoslah.movieguide.network.adapter.NetworkResponse
+import com.yassinemoslah.movieguide.network.common.ApiErrorPayload
 import com.yassinemoslah.movieguide.network.model.Category
 import com.yassinemoslah.movieguide.network.model.Movie
 /**
@@ -12,13 +13,13 @@ internal interface PublicApi {
     /**
      * @return a List of [Category]s
      */
-    suspend fun getAllCategories(): NetworkResponse<List<Category>, Error>
+    suspend fun getAllCategories(): NetworkResponse<List<Category>, ApiErrorPayload>
 
     /**
      * @return list of [Movie]s
      *
      * @param categoryName is optional
      */
-    suspend fun getMoviesByCategory(categoryName: String): NetworkResponse<List<Movie>, Error>
+    suspend fun getMoviesByCategory(categoryName: String): NetworkResponse<List<Movie>, ApiErrorPayload>
 
 }

@@ -14,5 +14,4 @@ object MovieGuideService : PublicApi {
 
     override suspend fun getMoviesByCategory(categoryName: String) = api.getMoviesByCategory(categoryName)
 
-
 }
