@@ -10,8 +10,6 @@ object MovieGuideService : PublicApi {
 
     private val api = RetrofitInit.getApi()
 
-    override suspend fun getAllCategories() = api.getAllCategories()
-
-    override suspend fun getMoviesByCategory(categoryName: String) = api.getMoviesByCategory(categoryName)
+    override suspend fun getAllMoviesGroupedByCategory() = api.getAllMoviesGroupedByCategory()
 
 }

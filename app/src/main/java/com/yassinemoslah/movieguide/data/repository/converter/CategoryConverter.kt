@@ -13,6 +13,6 @@ import com.yassinemoslah.movieguide.network.model.Category as NetworkCategory
  */
 object CategoryConverter {
     fun convert(networkCategory: NetworkCategory): AppCategory {
-        return AppCategory(networkCategory.name)
+        return AppCategory(networkCategory.name, networkCategory.movies.map { MovieConverter.convert(it) })
     }
 }

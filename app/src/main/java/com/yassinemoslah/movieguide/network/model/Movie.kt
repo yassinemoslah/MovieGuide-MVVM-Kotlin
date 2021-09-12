@@ -5,9 +5,9 @@ package com.yassinemoslah.movieguide.network.model
  */
 data class Movie(
     var id: Int,
-    var title: String?,
-    var year: String?,
-    var image: String?,
-    var description: String?,
-    var trailerUrl: String?
+    var title: String,
+    var year: String,
+    var imageUrl: String,
+    var description: String,
+    var trailerUrl: String
 )

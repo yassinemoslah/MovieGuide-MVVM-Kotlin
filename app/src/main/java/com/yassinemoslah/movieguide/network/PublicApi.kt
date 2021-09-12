@@ -13,13 +13,6 @@ internal interface PublicApi {
     /**
      * @return a List of [Category]s
      */
-    suspend fun getAllCategories(): NetworkResponse<List<Category>, ApiErrorPayload>
-
-    /**
-     * @return list of [Movie]s
-     *
-     * @param categoryName is optional
-     */
-    suspend fun getMoviesByCategory(categoryName: String): NetworkResponse<List<Movie>, ApiErrorPayload>
+    suspend fun getAllMoviesGroupedByCategory(): NetworkResponse<List<Category>, ApiErrorPayload>
 
 }

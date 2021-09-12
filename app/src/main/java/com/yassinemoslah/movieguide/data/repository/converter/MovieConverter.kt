@@ -15,7 +15,7 @@ object MovieConverter {
             networkMovie.id,
             networkMovie.title,
             networkMovie.year,
-            networkMovie.image,
+            networkMovie.imageUrl,
             networkMovie.description,
             networkMovie.trailerUrl
         )

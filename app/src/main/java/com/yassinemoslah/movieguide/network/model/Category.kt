@@ -6,5 +6,6 @@ import com.google.gson.annotations.SerializedName
  * Model class of a Category
  */
 data class Category(
-    @SerializedName("categoryName") val name: String
+    @SerializedName("categoryName") val name: String,
+    val movies: List<Movie>
 )
